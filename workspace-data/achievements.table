@@ -1,0 +1,21 @@
+{
+  "fields": [
+    { "field": "id", "type": "number", "required": true },
+    { "field": "year", "type": "string", "required": true },
+    { "field": "title", "type": "string", "required": true },
+    { "field": "athlete", "type": "string" },
+    { "field": "competition", "type": "string" },
+    { "field": "medal", "type": "enum", "enums": ["طلا", "نقره", "برنز", "عنوان تیمی", "رکورد"] },
+    { "field": "discipline", "type": "string" }
+  ],
+  "data": [
+    { "id": 1, "year": "۱۴۰۳", "title": "قهرمانی تیمی ریکرو مردان", "athlete": "تیم ققنوس", "competition": "لیگ برتر تیراندازی با کمان کشور", "medal": "عنوان تیمی", "discipline": "ریکرو" },
+    { "id": 2, "year": "۱۴۰۳", "title": "مدال طلای انفرادی کامپوند بانوان", "athlete": "نگار شفیعی", "competition": "مسابقات قهرمانی کشور", "medal": "طلا", "discipline": "کامپوند" },
+    { "id": 3, "year": "۱۴۰۲", "title": "رکورد باشگاهی ۷۰ متر ریکرو", "athlete": "امیرحسین طاهری", "competition": "رکوردگیری رسمی فدراسیون", "medal": "رکورد", "discipline": "ریکرو" },
+    { "id": 4, "year": "۱۴۰۲", "title": "مدال نقره انفرادی ریکرو مردان", "athlete": "امیرحسین طاهری", "competition": "مسابقات بین‌المللی جام آسیا", "medal": "نقره", "discipline": "ریکرو" },
+    { "id": 5, "year": "۱۴۰۱", "title": "مدال برنز تیمی میکس", "athlete": "نگار شفیعی و رضا امینی", "competition": "مسابقات قهرمانی کشور", "medal": "برنز", "discipline": "کامپوند" },
+    { "id": 6, "year": "۱۴۰۱", "title": "مدال طلای رده جوانان ریکرو", "athlete": "سپهر رادمنش", "competition": "المپیاد استعدادهای برتر کشور", "medal": "طلا", "discipline": "ریکرو" },
+    { "id": 7, "year": "۱۴۰۰", "title": "عنوان بهترین باشگاه استعدادیابی", "athlete": "باشگاه ققنوس", "competition": "ارزیابی سالانه فدراسیون", "medal": "عنوان تیمی", "discipline": "عمومی" },
+    { "id": 8, "year": "۱۳۹۹", "title": "مدال طلای انفرادی ریکرو بانوان", "athlete": "الهه موسوی", "competition": "مسابقات قهرمانی کشور", "medal": "طلا", "discipline": "ریکرو" }
+  ]
+}
