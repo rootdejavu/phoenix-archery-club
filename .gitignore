@@ -1,0 +1,47 @@
+# ---- وابستگی‌ها ----
+node_modules/
+.pnp
+.pnp.js
+
+# ---- خروجی ساخت ----
+dist/
+dist-ssr/
+build/
+*.local
+
+# ---- لاگ‌ها ----
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log
+
+# ---- متغیرهای محیطی (اطلاعات حساس) ----
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ---- فایل‌های ادیتور ----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ---- سیستم‌عامل ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- کش ابزارها ----
+.cache/
+.temp/
+.eslintcache
+.parcel-cache

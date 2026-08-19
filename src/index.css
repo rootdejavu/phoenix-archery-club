@@ -1,0 +1,31 @@
+/* ============================================================
+   استایل پایه پروژه — بارگذاری Tailwind و استایل‌های اختصاصی
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* استایل‌های اختصاصی سایت (انیمیشن‌ها، فیلدهای فرم و ...) */
+@import './main.css';
+
+/* ---- تنظیمات پایه صفحه ---- */
+@layer base {
+  html {
+    scroll-behavior: smooth; /* پیمایش نرم بین بخش‌ها */
+  }
+
+  body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #0b1a33;
+    font-family: 'Vazirmatn', 'IRANSansX', 'IRANSans', 'Segoe UI', Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* حذف حاشیه پیش‌فرض دکمه‌ها */
+  button {
+    font-family: inherit;
+  }
+}
