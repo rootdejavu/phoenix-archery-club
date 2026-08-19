@@ -1,0 +1,68 @@
+/* ============================================================
+   استایل‌های اختصاصی وب‌سایت باشگاه ققنوس
+   ------------------------------------------------------------
+   • فونت فارسی، جهت راست‌چین، انیمیشن‌ها و استایل فیلدهای فرم
+   ============================================================ */
+
+/* ---- فونت فارسی (در صورت عدم دسترسی، فونت سیستمی جایگزین می‌شود) ---- */
+.pac-root {
+  font-family: 'Vazirmatn', 'IRANSansX', 'IRANSans', 'Segoe UI', Tahoma, sans-serif;
+  direction: rtl;
+  text-align: right;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- انیمیشن ظاهر شدن هنگام اسکرول (شبیه AOS) ---- */
+.pac-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+  will-change: opacity, transform;
+}
+.pac-reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- کلیدفریم‌های انیمیشن ---- */
+@keyframes pacFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pacUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- استایل مشترک فیلدهای فرم ---- */
+.pac-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 13px;
+  font-family: inherit;
+  color: #0B1A33;
+  background-color: #FFFFFF;
+  border: 1px solid #E4E8EE;
+  border-radius: 0.9rem;
+  outline: none;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+.pac-input::placeholder {
+  color: #A8B2C1;
+}
+.pac-input:focus {
+  border-color: #7C93B8;
+  box-shadow: 0 0 0 3px rgba(124, 147, 184, 0.14);
+}
+
+/* ---- پیمایش نرم در کل صفحه ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---- بهبود نمایش در موبایل ---- */
+@media (max-width: 640px) {
+  .pac-root {
+    font-size: 14px;
+  }
+}
